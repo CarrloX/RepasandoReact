@@ -4,17 +4,22 @@ export function App() {
   return (
     <section className="App">
       <TwitterFollowCard
-        isFollowing={true}
         userName="carrlox_ann">
         CarrloX
       </TwitterFollowCard>
 
       <TwitterFollowCard
         userName="paimonaUwU"
-        children={"paimon"}
-        isFollowing={false}>
+        children={"paimon"}>
         <strong>Paimon</strong>
       </TwitterFollowCard>
+
+      <TwitterFollowCard
+        userName="paimonaUwU"
+        children={"paimon"}>
+        <strong>Paimon</strong>
+      </TwitterFollowCard>
+
     </section>
   );
 } 

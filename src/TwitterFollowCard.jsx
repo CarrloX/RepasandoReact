@@ -1,8 +1,12 @@
+import{userState} from 'react'
+
 export function TwitterFollowCard({
   children,
   userName = "unknown",
   isFollowing,
 }) {
+  const state = userState(isFollowing);
+
   const text = isFollowing ? "siguiendo" : "seguir";
 
   const buttonClassName = isFollowing
